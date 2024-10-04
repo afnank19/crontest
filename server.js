@@ -17,7 +17,7 @@ const job = new CronJob(
 	async function () {
 		console.log('You will see this message every minute');
         try {
-            const response = await axios.get('http://localhost:3000/test');
+            const response = await axios.get('https://mental-hermina-afnan-we-2b1435df.koyeb.app/test');
             console.log('Cron Job: Response from /test:', response.data);
         } catch (error) {
             console.log(error)
